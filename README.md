@@ -1,3 +1,0 @@
-# tutorial-udemy
-tutorial
-asdfd
