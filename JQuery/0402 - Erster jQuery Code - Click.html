@@ -1,0 +1,31 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>jQuery</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+        #viereck{
+            width:200px;
+            height: 200px;
+            background-color: cornflowerblue;
+            margin:20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="viereck"></div>
+    
+
+    
+
+    <script>
+       $("#viereck").click(function(){
+            $("#viereck").animate({width:"400px", height:"400px", margin:"20px", borderRadius:"50%"}, 200, function(){
+                $(this).css("background-color", "red");
+            });
+       });
+    </script>
+</body>
+</html>

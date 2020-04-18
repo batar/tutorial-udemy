@@ -1,0 +1,30 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektoren mit jQuery</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul id="list">
+            <li>Erstes Element</li>
+            <li>Element 2 </li>
+            <li>Element 3 </li>
+            <li>Element 4 </li>
+            <li>Element 5 </li>
+            <li>Letztes Element </li>
+        </ul>
+    </div>
+    <script>
+       $("ul#list li:first").css("color", "blue");
+       $("ul#list li:last").css("color", "orange");
+       $("ul#list li:even").css("background-color", "red");
+       $("ul#list li:nth-child(3n)").css("background-color", "grey");
+    </script>
+</body>
+</html>

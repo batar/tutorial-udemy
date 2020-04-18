@@ -1,0 +1,25 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays in Javascript</title>
+
+</head>
+<body>
+    <h1 id="top">Hallo Welt</h1>
+    <input type="text" id="name" />
+    <button type="button" id="myButton">Mein Name ist</button>
+    
+
+    <script>
+        function nameAngabe(parameter){
+            return "Mein name ist " + parameter;
+        }
+        document.getElementById("myButton").onclick = function(){
+            var name = document.getElementById("name").value;
+            document.getElementById("top").innerHTML = nameAngabe(name);
+        }
+    </script>
+</body>
+</html>

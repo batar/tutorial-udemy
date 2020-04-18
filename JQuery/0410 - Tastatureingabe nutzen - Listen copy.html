@@ -1,0 +1,36 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Selektoren mit jQuery</title>
+    <script src="jquery-3.3.1.min.js"></script>
+    <style>
+
+    </style>
+</head>
+<body>
+    <input type="text" id="newItem">
+    <ul id="list">
+        <li>Erstes element</li>
+        <li>Element 2</li>
+        <li>Element 3</li>
+        <li>Element 4</li>
+        <li>Element 5</li>
+        <li>Element 6</li>
+        <li>Letztes Element</li>
+    </ul>
+    <script>
+        $("#newItem").keyup(function(e){
+            var code = e.which;
+            if(code == 13){
+                $("ul#list").append("<li>"+$("#newItem").val()+"</li>");
+                $("#newItem").val("");
+            }
+            $("li").click(function(){
+                $(this).remove();
+            });
+        });
+    </script>
+</body>
+</html>
