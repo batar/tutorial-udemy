@@ -1,0 +1,23 @@
+$company-color:black;
+$company-border:red;
+h1{
+   color:$company-color;
+   border-bottom: $company-color;
+   &:hover{
+      color:green;
+      border-bottom: 3px solid $company-border;
+   }
+}
+
+ul {
+   list-style-type: none;
+}
+
+ul li {
+   color:$company-color;
+}
+.box{
+   width: 200px;
+   height: 200px;
+   background:linear-gradient(to bottom, white, black);
+}
