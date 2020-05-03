@@ -1,0 +1,24 @@
+<!Doctype html>
+<html lang="de-DE">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arrays in Javascript</title>
+
+</head>
+<body>
+    <p id="pTag">Hochrechnen </p>
+    <input type="number" id="zahl">
+    <button type="button" id="myButton" onclick="hochrechnen()">Rechnen </button>
+    <script>
+        function hochrechnen(){
+            var zahl = document.getElementById("zahl").value;
+            console.log("hochrechnen: " + zahl*zahl);
+            console.log("hochdreirechnen: " + zahl*zahl*zahl);
+            console.log("hochvierrechnen: " + zahl*zahl*zahl*zahl);
+        }
+        hochrechnen();
+        
+    </script>
+</body>
+</html>
